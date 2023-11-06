@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src = "https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color:#000000">
+
+        <a-entity position="0 0 4.8">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <a-assets>
+            <a-asset-item id="chair-obj" src="./tinker.obj"></a-asset-item>
+            <a-asset-item id="chair-mtl" src="./obj.mtl"></a-asset-item>
+
+        </a-assets>
+
+
+        <a-entity>
+            <a-plane src="https://t3.ftcdn.net/jpg/04/29/49/88/360_F_429498892_tPGMP3YboQ5hrrIUnLIuR2C7L6zNtFsc.jpg" position="0 0 0" rotation="-90 0 0" width="5.5" height="4" ></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-plane src="https://t3.ftcdn.net/jpg/04/29/49/88/360_F_429498892_tPGMP3YboQ5hrrIUnLIuR2C7L6zNtFsc.jpg" position="0 1.5 -1.9" rotation="0 0 0" width="5.5" height="3"></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-plane src = "https://image.shutterstock.com/image-vector/seamless-geometric-pattern-texture-multicolored-260nw-1036720519.jpg"position="0 0.001 0.8" rotation="-90 0 0" width="2.6"></a-plane>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder src="https://t4.ftcdn.net/jpg/04/97/24/25/360_F_497242503_Ib0jkOSQnDe9Dg1qaoyVxmKG60Rjfxcb.jpg" position="0 0.3 1" height="0.5" width="0.1" radius="0.3"  ></a-cylinder>
+        </a-entity>
+
+        <a-entity>
+            <a-box src="https://t4.ftcdn.net/jpg/04/97/24/25/360_F_497242503_Ib0jkOSQnDe9Dg1qaoyVxmKG60Rjfxcb.jpg"  depth = "0.1" position="0 0.7 1" rotation="-90 0 0" width="2.5" height="2"></a-box>
+        </a-entity>
+
+        <a-entity>
+            <a-plane src="https://images.rawpixel.com/image_social_portrait/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3BkbWlzYzctd2szOTg1MDIwMy1pbWFnZV8yLmpwZw.jpg" position="0 1.5 -1.8" rotation="0 0 0" width="3" height="2"></a-plane>
+        </a-entity>
+
+        <a-entity obj-model="obj: #chair-obj ;mtl: #chair-mtl"  position="5 0 0" rotation="0 0 0" scale="0.1 0.1 0.1 "></a-entity>
+
+        
+
+
+
+    </a-scene>
+</body>
+</html>
